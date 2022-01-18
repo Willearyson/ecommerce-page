@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="btn-back"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>
+        <div class="btn-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>
+<header>
+  <div class="header-container">
+    <div class="header-area">
+      <div class="left-side">
+        <div class="btn-menu-mobile">
+          <img src="./images/icon-menu.svg" alt="">
+        </div>
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt=""></a>
+        </div>
+        <div class="header-navegation">
+          <nav>
+            <ul>
+              <li><a href="">Collections</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="cart-img">
+          <img src="./images/icon-cart.svg" alt="">
+        </div>
+        <div class="cart-basket">
+          <p class="cart-title">Cart</p>
+
+          <div class="hiden-cart">
+           <div class="order-space">
+            <div class="product-in-order">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">             
+              <div class="order-prize">
+                <p class="order-name">Fall Limited Edition Sneakers</p>
+                <div class="descount-area">
+                  <p class="descont-prize">$125,00</p>
+                  <p class="descount-area-x ">x</p>
+                  <p class="product-qts">1</p>
+                  <p class="total-prize">$125,00</p>
+                </div>                
+              </div>
+            </div>
+            <img class="delete-item" src="./images/icon-delete.svg" alt="">
+          </div>
+          <div class="checkout-btn"><p>checkout</p></div>
+          </div>         
+        </div>
+        <div class="user-img">
+          <img src="./images/image-avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-mobile-absolute">
+    
+    <div class="navegation-mobile">
+    <div class="cross-mobile">
+      <img src="./images/icon-close.svg" alt="">
+    </div>
+      <nav>
+        <ul>
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="product-container">
+    <div class="product-general-area">
+      <div class="product-left-side">
+        <div class="current-img">
+          <img data-js="carousel-item" class="change-imgs carousel_item img-visible" src="./images/image-product-1.jpg" alt="">
+          <img data-js="carousel-item" class="carousel_item" src="./images/image-product-2.jpg" alt="">
+          <img data-js="carousel-item" class="carousel_item" src="./images/image-product-3.jpg" alt="">
+          <img data-js="carousel-item" class="carousel_item" src="./images/image-product-4.jpg" alt="">
+        </div>
+        <div class="thumbnail-area">
+          <div id="1" class="thumbnail-item">
+            <img id="active-1" src="./images/image-product-1-thumbnail.jpg" alt="" class="thumbnail-active">
+          </div>
+          <div id="2" class="thumbnail-item">
+            <img id="active-2" src="./images/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div id="3" class="thumbnail-item">
+            <img id="active-3" src="./images/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div id="4" class="thumbnail-item">
+            <img id="active-4" src="./images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product-right-side">
+        <div class="produtc-content-area">
+          <p class="company-name">Sneaker Company </p>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p class="about-product">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="prize-product">
+            <p class="discount-value">$125.00</p>
+            <p class="discount">50%</p>
+            <p class="current-prize-mobile">$250.00</p>
+          </div>
+          <p class="current-prize">$250.00</p>
+        </div>
+        <div class="controls-addcart-area">
+          <div class="controls">
+            <div class="sub">-</div>
+            <div class="value-in-cart">1</div>
+            <div class="add">+</div>
+          </div>
+          <div class="add-cart-btn">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#FFF" fill-rule="nonzero"/></svg> <p>Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="light-box">
+  <div class="cross-lightbox"><svg width="14px" height="15px" xmlns="http://www.w3.org/2000/svg"><path width="24px" height="25px" d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#FFF" fill-rule="evenodd"/></svg></div>
+  <div class="light-box-imgs">
+      <div class="current-img-lightbox">
+          <img id="change-imgs-lightbox" src="./images/image-product-1.jpg" alt="">
+      </div>
+      <div class="thumbnail-area-lightbox">
+        <div id="1-lb" class="thumbnail-item-lightbox">
+          <img id="active-1-lb" class="thumbnail-active-lightbox" src="./images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div id="2-lb" class="thumbnail-item-lightbox">
+          <img id="active-2-lb" src="./images/image-product-2-thumbnail.jpg" alt="">
+        </div>
+        <div id="3-lb" class="thumbnail-item-lightbox">
+          <img id="active-3-lb" src="./images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+        <div id="4-lb" class="thumbnail-item-lightbox">
+          <img id="active-4-lb" src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  
+</section>
+<script src="./script.js"></script>
+  
+</body>
+</html>
